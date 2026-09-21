@@ -3,91 +3,158 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TriggerSmart — Lance Twiggs File (Reverified)</title>
+<title>TriggerSmart — Lance Twiggs File (Fully Re-Audited)</title>
 <style>
-:root{--bg:#080808;--panel:#121212;--text:#f4f4f4;--muted:#aaa;--orange:#ff5c00;--line:#2b2b2b;--green:#35c47c;--yellow:#f2bf4a;--red:#e6635b;--blue:#8ea7ff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(#070707,#111 38%,#080808);color:var(--text);font-family:Arial,Helvetica,sans-serif}.wrap{max-width:1180px;margin:auto}
-header{padding:42px 20px 28px;background:radial-gradient(circle at 15% 0%,rgba(255,92,0,.2),transparent 35%),#080808;border-bottom:1px solid var(--line)}
-.kicker{color:var(--orange);font-weight:900;letter-spacing:.16em;text-transform:uppercase;font-size:12px}h1{font-size:clamp(38px,6vw,72px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase;margin:10px 0 16px}.sub{max-width:900px;color:#ccc;font-size:18px;line-height:1.55}
-.audit{margin-top:20px;padding:15px 17px;border-left:4px solid var(--green);background:#0d1711;color:#d7efe0;line-height:1.5}
-nav{position:sticky;top:0;z-index:10;background:rgba(7,7,7,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap}nav .wrap{display:flex;gap:8px;padding:10px 16px}nav a{color:#ddd;text-decoration:none;border:1px solid #333;border-radius:999px;padding:8px 12px;font-size:13px}
-main{padding:20px 16px 70px}section{max-width:1180px;margin:34px auto;scroll-margin-top:70px}h2{font-size:30px;margin:0 0 7px}.deck{color:var(--muted);line-height:1.55;max-width:930px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:14px;margin-top:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px}.card h3{margin:8px 0}.card p{color:#bbb;line-height:1.48}
-.badge{display:inline-block;padding:5px 8px;border-radius:999px;border:1px solid #444;font-size:11px;text-transform:uppercase;letter-spacing:.07em;font-weight:900}.verified{color:#bdf6d7;border-color:#246b47}.archive{color:#d4dcff;border-color:#3b4d82}.manual{color:#ffd1cd;border-color:#7b312d}
-.open{display:inline-block;background:var(--orange);color:white;text-decoration:none;font-weight:900;border-radius:9px;padding:10px 13px;margin-top:6px}.video{margin:16px 0;border:1px solid var(--line);border-radius:15px;overflow:hidden;background:#000}.video iframe{width:100%;aspect-ratio:16/9;border:0;display:block}.cap{padding:11px 14px;background:#111;color:#bbb;line-height:1.45}.warn{background:#18110d;border:1px solid #5d3a23;border-radius:14px;padding:15px 16px;color:#ddd;line-height:1.5}.ok{color:#8ce0af;font-weight:900}.small{font-size:12px;color:#888}footer{border-top:1px solid var(--line);padding:28px 18px 55px;color:#858585}
+:root{
+  --bg:#080808;--panel:#121212;--panel2:#171717;--text:#f3f3f3;--muted:#a9a9a9;
+  --orange:#ff5c00;--line:#2d2d2d;--green:#30c378;--blue:#8ca6ff;--yellow:#f0ba45;--red:#e46660;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#070707,#101010 36%,#090909);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.wrap{max-width:1180px;margin:auto}
+header{padding:42px 20px 28px;background:radial-gradient(circle at 14% 0%,rgba(255,92,0,.20),transparent 34%),#080808;border-bottom:1px solid var(--line)}
+.kicker{color:var(--orange);font-weight:900;letter-spacing:.16em;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(38px,6vw,72px);line-height:.95;letter-spacing:-.04em;text-transform:uppercase;margin:10px 0 16px}
+.sub{max-width:900px;color:#c8c8c8;font-size:18px;line-height:1.55}
+.audit{margin-top:20px;padding:15px 17px;border-left:4px solid var(--green);background:#0d1711;color:#d7efe0;line-height:1.55}
+nav{position:sticky;top:0;z-index:10;background:rgba(7,7,7,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap}
+nav .wrap{display:flex;gap:8px;padding:10px 16px}
+nav a{color:#ddd;text-decoration:none;border:1px solid #333;border-radius:999px;padding:8px 12px;font-size:13px}
+nav a:hover{border-color:var(--orange)}
+main{padding:18px 16px 70px}
+section{max-width:1180px;margin:34px auto;scroll-margin-top:72px}
+h2{font-size:30px;margin:0 0 8px}.deck{color:var(--muted);line-height:1.55;max-width:920px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h3{margin:8px 0 8px;font-size:18px}.card p{color:#bbb;line-height:1.48}
+.badge{display:inline-block;padding:5px 8px;border-radius:999px;border:1px solid #444;font-size:11px;text-transform:uppercase;letter-spacing:.07em;font-weight:900}
+.verified{color:#bdf6d7;border-color:#246b47}.archive{color:#d6ddff;border-color:#405188}.manual{color:#ffd1ce;border-color:#7d312e}.reported{color:#ffe8ad;border-color:#6f5a26}
+.open{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:900;border-radius:9px;padding:9px 12px;margin:4px 5px 0 0}
+.open.alt{background:#252525;border:1px solid #424242}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px;margin-top:16px;align-items:start}
+.video{max-width:520px;background:#0b0b0b;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.video iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.cap{padding:11px 13px;color:#bbb;background:#111;line-height:1.45}
+.warning{background:#18100c;border:1px solid #633923;border-radius:14px;padding:15px 16px;line-height:1.5;color:#ddd;margin-top:16px}
+.audit-table{width:100%;border-collapse:collapse;margin-top:15px}
+.audit-table td,.audit-table th{border-bottom:1px solid #292929;padding:10px;text-align:left;vertical-align:top}
+.audit-table th{color:#ddd}.ok{color:#8ce0af;font-weight:900}.no{color:#ffaaa4;font-weight:900}
+footer{border-top:1px solid var(--line);padding:28px 18px 55px;color:#858585}.small{font-size:12px}
+@media(max-width:650px){h1{font-size:42px}.videos{grid-template-columns:1fr}.video{max-width:100%}}
 </style>
 </head>
 <body>
 <header><div class="wrap">
 <div class="kicker">TriggerSmart Investigative Companion</div>
 <h1>The Lance Twiggs File</h1>
-<div class="sub">Reverified build. All Megyn Kelly timestamps now point to the actual 2h40m full episode, not the unrelated 20:56 clip. Unverified timestamps were removed rather than guessed.</div>
-<div class="audit"><b>Reverification completed Sept. 21, 2026.</b> The correct full Megyn Kelly YouTube upload is <b>b7CwCyrCDog</b>. Its runtime matches the 2:39:26 transcript and 2h40m podcast listing. Exact moments below were checked against that transcript. Baron Coleman timestamps come from the video's own published chapter list.</div>
+<div class="sub">Fully re-audited source build. Every article/archive below was opened successfully. Every video timestamp below is tied to the exact upload used in the embed. Unverifiable video timestamps were removed completely.</div>
+<div class="audit"><b>Audit standard:</b> If the exact page did not load, it was excluded. If a video’s exact upload and timestamp could not be tied to a transcript or publisher-supplied chapter, it was excluded. The host-supplied TikTok is retained only as a manual-check item because TikTok blocks automated verification.</div>
 </div></header>
 
-<nav><div class="wrap"><a href="#court">Court</a><a href="#archive">Archives</a><a href="#turkey">Turkey Tom</a><a href="#household">Household claims</a><a href="#social">Social</a><a href="#influence">Influence</a><a href="#foreknowledge">Foreknowledge</a><a href="#source">Source identity</a></div></nav>
+<nav><div class="wrap">
+<a href="#court">Court record</a><a href="#accounts">Accounts</a><a href="#source">Turkey Tom source</a><a href="#household">Household claims</a><a href="#social">Social media</a><a href="#foreknowledge">Foreknowledge</a><a href="#influence">Influence</a><a href="#audit">Audit</a>
+</div></nav>
 
 <main>
-<section id="court"><h2>1. Court Record</h2><p class="deck">Primary factual baseline before any anonymous-source material.</p>
+<section id="court">
+<h2>1. Court Record</h2>
+<p class="deck">Use these first. They are the strongest factual baseline for relationship, note, texts, politics, immunity, and current case posture.</p>
 <div class="grid">
-<div class="card"><span class="badge verified">Live verified</span><h3>KSL — July 9 hearing</h3><p>Relationship, note, messages, politics, phone extraction and recorded interview.</p><a class="open" href="https://www.ksl.com/article/news/utah/police-and-courts/charlie-kirk-case-roommates-interview-text-messages-and-letter-introduced-at-hearing/51595867" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>CBS — interview evidence</h3><p>Independent coverage of Lance saying he had never heard Tyler discuss Kirk before the shooting.</p><a class="open" href="https://www.cbsnews.com/news/charlie-kirk-tyler-robinson-preliminary-hearing-roommate-lance-twiggs/" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>Fox — limited use immunity</h3><p>Reports the April 20, 2026 sworn statement and immunity arrangement.</p><a class="open" href="https://www.foxnews.com/us/alleged-charlie-kirk-assassin-tyler-robinsons-roommate-lover-received-limited-immunity-prosecutors/" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>KSL — Twiggs not compelled live</h3><p>Judge Tony Graf's preliminary-hearing ruling.</p><a class="open" href="https://www.ksl.com/article/51514765/2-rulings-expected-monday-as-tyler-robinson-renews-effort-to-ban-cameras-from-hearing" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>KSL — defense motive challenge</h3><p>Defense argument over aggravated-murder elements and motive.</p><a class="open" href="https://www.ksl.com/article/51608881/tyler-robinson-contends-state-has-not-proven-elements-needed-for-aggravated-murder" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>KSL — ordered to trial</h3><p>Current case posture.</p><a class="open" href="https://www.ksl.com/article/news/utah/police-and-courts/tyler-robinson-to-stand-trial-on-all-counts/51618264" target="_blank">Open</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>KSL — July 9 hearing</h3><p>Recorded Twiggs interview, relationship, note under keyboard, text exchange, politics and post-shooting behavior.</p><a class="open" target="_blank" href="https://www.ksl.com/article/51595867/watch-live-more-evidence-expected-in-day-4-of-tyler-robinsons-preliminary-hearing">Open KSL</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>CBS — July 9 hearing</h3><p>Independent report that Twiggs said he had never heard Robinson talk about Kirk before the shooting.</p><a class="open" target="_blank" href="https://www.cbsnews.com/news/charlie-kirk-tyler-robinson-preliminary-hearing-roommate-lance-twiggs/">Open CBS</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>CBS — use immunity</h3><p>Reports State Bureau of Investigation testimony that Twiggs received use immunity for his recorded statements.</p><a class="open" target="_blank" href="https://www.cbsnews.com/news/charlie-kirk-suspect-roommate-immunity-recorded-statements/">Open CBS</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>KSL — prosecutors oppose subpoena</h3><p>Documents the fight over compelling Twiggs to appear in person and identifies him as Robinson's boyfriend who received immunity.</p><a class="open" target="_blank" href="https://www.ksl.com/article/51512909/prosecutors-oppose-effort-to-make-tyler-robinson-roommate-appear-at-prelim">Open KSL</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>KSL — redactions</h3><p>Judge Graf's handling of redactions to the recorded Twiggs interview.</p><a class="open" target="_blank" href="https://www.ksl.com/article/51595429/tyler-robinson-returns-to-court-for-day-3-of-his-preliminary-hearing">Open KSL</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>KSL — current posture</h3><p>Robinson was bound over to stand trial on all counts on Sept. 1, 2026.</p><a class="open" target="_blank" href="https://www.ksl.com/article/news/utah/police-and-courts/tyler-robinson-to-stand-trial-on-all-counts/51618264">Open KSL</a></div>
 </div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=4237" allowfullscreen></iframe><div class="cap"><b>1:10:37 — dating history.</b> Verified against the 2:39:26 transcript.</div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=5058" allowfullscreen></iframe><div class="cap"><b>1:24:18 — politics / Charlie Kirk.</b> At 1:24:21 Lance says he had never personally heard Tyler talk about Kirk before.</div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=5825" allowfullscreen></iframe><div class="cap"><b>1:37:05 — text exchange.</b> Tyler's alleged “my love” message begins here; the “Some hate can't be negotiated out” line is at about 1:38:03.</div></div>
-</section>
 
-<section id="archive"><h2>2. Account & Archive Trail</h2>
-<div class="grid">
-<div class="card"><span class="badge archive">Archive verified</span><h3>SteamHistory</h3><p>Shows fluxalotl, lanclotl, lancelotte, RealName Lance/Luna, and lancelott3 URL history.</p><a class="open" href="https://archive.ph/oICK3" target="_blank">Open</a></div>
-<div class="card"><span class="badge archive">Archive verified</span><h3>Reddit archive</h3><p>Archived u/lancelott3 overview.</p><a class="open" href="https://archive.ph/xo9Xp" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>Andy Ngo account mapping</h3><p>Cross-platform reporting tying the historical usernames to attributed TikTok and Reddit accounts.</p><a class="open" href="https://www.ngocomment.com/p/unmasking-luna-charlie-kirk-assassin" target="_blank">Open</a></div>
-</div></section>
-
-<section id="turkey"><h2>3. Turkey Tom Source Chain</h2>
-<div class="grid">
-<div class="card"><span class="badge verified">Live verified</span><h3>Original Anonbirdd Substack</h3><p>The public source dump. Turkey Tom says the leaker provided verification photos, a firsthand account, apartment photos/drawings, and archives from three Discord servers.</p><a class="open" href="https://anonbirdd.substack.com/p/charlie-kirks-killers-discord-logs" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">YouTube verified</span><h3>Megyn Kelly full episode</h3><p>Correct 2h40m upload. The prior site accidentally linked a 20:56 clip; that has been removed everywhere.</p><a class="open" href="https://www.youtube.com/watch?v=b7CwCyrCDog&t=412s" target="_blank">Play at 6:52</a></div>
-<div class="card"><span class="badge verified">YouTube verified</span><h3>Baron Coleman sourcing critique</h3><p>Published chapters verify 0:57 and 14:32.</p><a class="open" href="https://www.youtube.com/watch?v=CGK7-9wukfk&t=57s" target="_blank">Play 0:57</a><br><a class="open" href="https://www.youtube.com/watch?v=CGK7-9wukfk&t=872s" target="_blank">Play 14:32</a></div>
+<h3 style="margin-top:22px">Verified courtroom-video excerpts — Nancy Grace upload</h3>
+<p class="deck">Exact upload: <b>aVDExETClNg</b>. Matching episode transcript is 47:59. These timestamps are taken from that transcript, not from another program.</p>
+<div class="videos">
+<div class="video"><iframe src="https://www.youtube.com/embed/aVDExETClNg?start=170" allowfullscreen></iframe><div class="cap"><b>2:50 — relationship.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=aVDExETClNg&t=170s">Open at 2:50</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/aVDExETClNg?start=227" allowfullscreen></iframe><div class="cap"><b>3:47 — note under keyboard.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=aVDExETClNg&t=227s">Open at 3:47</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/aVDExETClNg?start=317" allowfullscreen></iframe><div class="cap"><b>5:17 — alleged confession texts.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=aVDExETClNg&t=317s">Open at 5:17</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/aVDExETClNg?start=478" allowfullscreen></iframe><div class="cap"><b>7:58 — “Some hate can’t be negotiated out.”</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=aVDExETClNg&t=478s">Open at 7:58</a></div></div>
 </div>
-<div class="warn"><b>Turkey Tom's original 47-minute YouTube video is live, but this rebuild does not use a timestamp from it because I could not independently tie a specific second to the exact claim. The Substack and verified Megyn excerpt cover the source chain without guessing.</b></div>
 </section>
 
-<section id="household"><h2>4. Anonymous-Source Household Claims</h2>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=593" allowfullscreen></iframe><div class="cap"><b>9:53 — apartment condition.</b></div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=776" allowfullscreen></iframe><div class="cap"><b>12:56 — source says Twiggs changed as the 2024 election approached.</b> Tyler-specific political discussion follows at 13:14.</div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=836" allowfullscreen></iframe><div class="cap"><b>13:56 — “black market HRT” allegation.</b></div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=896" allowfullscreen></iframe><div class="cap"><b>14:56 — drawings, experiments and sleep allegation.</b></div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=962" allowfullscreen></iframe><div class="cap"><b>16:02 — ChatGPT allegation.</b> The “three straight days” claim follows at 16:07.</div></div>
-</section>
-
-<section id="social"><h2>5. Social Media & Corroboration</h2>
+<section id="accounts">
+<h2>2. Historical Account Trail</h2>
 <div class="grid">
-<div class="card"><span class="badge manual">Manual host check</span><h3>@lanclotl TikTok</h3><p>TikTok blocks automated verification. Open immediately before air. If it fails, do not use it.</p><a class="open" href="https://www.tiktok.com/@lanclotl/video/7170788413153496362?ysclid=mlreostopc55773342" target="_blank">Open TikTok</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>Posobiec / midGRAY comparisons</h3><p>Telegram mirror contains Rocket League and collectible-card corroboration claims.</p><a class="open" href="https://t.me/s/Jack_Posobiec?before=61992" target="_blank">Open</a></div>
-</div></section>
-
-<section id="influence"><h2>6. Influence / Radicalization Evidence Test</h2>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=794" allowfullscreen></iframe><div class="cap"><b>13:14 — source's claim about Tyler becoming more political after the election.</b> At 13:29 the source says both became more political but “not to an extremist level.”</div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=5058" allowfullscreen></iframe><div class="cap"><b>1:24:18 — court-record counterweight.</b> Lance says he had never heard Tyler discuss Kirk and says they did not really discuss gender/LGBTQ issues.</div></div>
+<div class="card"><span class="badge archive">Opened archive</span><h3>SteamHistory — fluxalotl</h3><p>Archived Sept. 13, 2025. Shows persona history including lanclotl / lancelotte / fluxalotl, RealName Lance → Luna, and URL history containing lancelott3.</p><a class="open" target="_blank" href="https://archive.ph/oICK3">Open archive</a></div>
+<div class="card"><span class="badge archive">Opened archive</span><h3>Reddit — lancelott3</h3><p>Archived Sept. 13, 2025 overview of the attributed Reddit profile.</p><a class="open" target="_blank" href="https://archive.ph/xo9Xp">Open archive</a></div>
+<div class="card"><span class="badge reported">Opened report</span><h3>Andy Ngo cross-platform mapping</h3><p>Reports the Steam aliases matching attributed TikTok usernames and other biographical details. Treat conclusions as reporting, not court findings.</p><a class="open" target="_blank" href="https://www.ngocomment.com/p/unmasking-luna-charlie-kirk-assassin">Open report</a></div>
+</div>
 </section>
 
-<section id="foreknowledge"><h2>7. Apparent Foreknowledge Posts</h2>
+<section id="source">
+<h2>3. Turkey Tom Source Chain</h2>
 <div class="grid">
-<div class="card"><span class="badge verified">Live verified</span><h3>Washington Free Beacon</h3><p>Original report on FBI review of accounts that appeared to indicate foreknowledge. The report itself notes the posts do not establish conspiracy.</p><a class="open" href="https://freebeacon.com/politics/exclusive-fbi-investigating-social-media-accounts-that-appeared-to-indicate-foreknowledge-of-kirk-assassination/" target="_blank">Open</a></div>
-<div class="card"><span class="badge verified">Live verified</span><h3>Epoch Times follow-up</h3><p>Includes authentication caveats and lack of public DOJ confirmation about outcomes for the account holders.</p><a class="open" href="https://www.theepochtimes.com/us/fbi-probing-posts-indicating-foreknowledge-of-kirk-assassination-5915393" target="_blank">Open</a></div>
-</div></section>
+<div class="card"><span class="badge verified">Opened primary public dump</span><h3>Anonbirdd Substack</h3><p>The exact public source dump. It says the unnamed source supplied verification photos, a firsthand relationship account, apartment photos/drawings, and archives from three Discord servers.</p><a class="open" target="_blank" href="https://anonbirdd.substack.com/p/charlie-kirks-killers-discord-logs">Open Substack</a></div>
+<div class="card"><span class="badge verified">Opened & timestamped</span><h3>Baron Coleman — source critique</h3><p>The video's own published chapters identify the provenance question and “handler” wording discussion.</p><a class="open" target="_blank" href="https://www.youtube.com/watch?v=CGK7-9wukfk&t=57s">Open at 0:57</a><a class="open alt" target="_blank" href="https://www.youtube.com/watch?v=CGK7-9wukfk&t=872s">Open at 14:32</a></div>
+</div>
+<div class="videos">
+<div class="video"><iframe src="https://www.youtube.com/embed/CGK7-9wukfk?start=57" allowfullscreen></iframe><div class="cap"><b>0:57 — why would a six-year insider go to a YouTuber?</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=CGK7-9wukfk&t=57s">Open at 0:57</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/CGK7-9wukfk?start=872" allowfullscreen></iframe><div class="cap"><b>14:32 — “basically his handler” wording.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=CGK7-9wukfk&t=872s">Open at 14:32</a></div></div>
+</div>
+<div class="warning"><b>Turkey Tom video policy:</b> the original 47:02 YouTube video is live, but this page does not embed it because I could not independently tie exact seconds in that upload to each cited claim. The Substack is used instead.</div>
+</section>
 
-<section id="source"><h2>8. Anonymous Source Identity</h2><p class="deck">No verified public identity is established. The site deliberately does not speculate toward a private person's identity. It focuses on access, provenance, corroboration and motive.</p>
-<div class="video"><iframe src="https://www.youtube.com/embed/b7CwCyrCDog?start=412" allowfullscreen></iframe><div class="cap"><b>6:52 — six-year friend claim and verification material.</b></div></div>
-<div class="video"><iframe src="https://www.youtube.com/embed/CGK7-9wukfk?start=57" allowfullscreen></iframe><div class="cap"><b>0:57 — Baron Coleman questions why the source went to a YouTuber.</b></div></div>
+<section id="household">
+<h2>4. Anonymous-Source Household Claims</h2>
+<p class="deck">These clips use the exact short Megyn Kelly upload <b>0fmKLOKVUY4 — “SHOCK Alleged Details About Lance Twiggs and Tyler Robinson's Life”</b>. All timestamps below stay within that short clip and match the opening segment transcript.</p>
+<div class="videos">
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=593" allowfullscreen></iframe><div class="cap"><b>9:53 — apartment condition / “nest” claim.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=593s">Open at 9:53</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=678" allowfullscreen></iframe><div class="cap"><b>11:18 — anonymous-source drug allegations.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=678s">Open at 11:18</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=794" allowfullscreen></iframe><div class="cap"><b>13:14 — source says Tyler became more political after the election.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=794s">Open at 13:14</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=836" allowfullscreen></iframe><div class="cap"><b>13:56 — “black market HRT” allegation.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=836s">Open at 13:56</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=896" allowfullscreen></iframe><div class="cap"><b>14:56 — drawings, experiments and little-sleep allegation.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=896s">Open at 14:56</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=962" allowfullscreen></iframe><div class="cap"><b>16:02 — ChatGPT claim; “three straight days” follows at 16:07.</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=962s">Open at 16:02</a></div></div>
+<div class="video"><iframe src="https://www.youtube.com/embed/0fmKLOKVUY4?start=1007" allowfullscreen></iframe><div class="cap"><b>16:47 — source describes Tyler as basically Lance's “handler.”</b><br><a class="open" target="_blank" href="https://www.youtube.com/watch?v=0fmKLOKVUY4&t=1007s">Open at 16:47</a></div></div>
+</div>
+</section>
+
+<section id="social">
+<h2>5. TikTok / Social Corroboration</h2>
+<div class="grid">
+<div class="card"><span class="badge manual">Manual check only</span><h3>Host-supplied @lanclotl TikTok</h3><p>TikTok returned an automated-access error during audit. Keep only if it opens correctly in your browser immediately before air.</p><a class="open" target="_blank" href="https://www.tiktok.com/@lanclotl/video/7170788413153496362?ysclid=mlreostopc55773342">Open TikTok</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>Posobiec / midGRAY collectible-card comparison</h3><p>Live Telegram page shows the claim that cards in leaked apartment imagery match cards in older Lance footage. This can support access, not every allegation.</p><a class="open" target="_blank" href="https://t.me/s/Jack_Posobiec?before=61992">Open Telegram</a></div>
+</div>
+</section>
+
+<section id="foreknowledge">
+<h2>6. Apparent Foreknowledge Posts</h2>
+<div class="grid">
+<div class="card"><span class="badge verified">Opened & verified</span><h3>Washington Free Beacon</h3><p>Original Sept. 15, 2025 report on FBI review of at least seven accounts. The article itself says the posts do not establish that users knew or conspired with Robinson.</p><a class="open" target="_blank" href="https://freebeacon.com/politics/exclusive-fbi-investigating-social-media-accounts-that-appeared-to-indicate-foreknowledge-of-kirk-assassination/">Open report</a></div>
+<div class="card"><span class="badge verified">Opened mirror</span><h3>Thread Reader mirror</h3><p>Readable mirror of the Free Beacon X thread, including the reported TikTok-follow connection.</p><a class="open" target="_blank" href="https://threadreaderapp.com/thread/1967564463868948984">Open thread</a></div>
+</div>
+</section>
+
+<section id="influence">
+<h2>7. Relationship Influence Evidence Test</h2>
+<p class="deck">Use the source's own claim that politics increased, then immediately balance it with court reporting that Twiggs said Robinson had never discussed Kirk with him before the shooting.</p>
+<div class="grid">
+<div class="card"><span class="badge verified">Opened & verified</span><h3>CBS — no prior Kirk discussion</h3><p>Twiggs told a prosecutor he had never heard Robinson talk about Kirk before the shooting; political discussions usually involved Trump/current events.</p><a class="open" target="_blank" href="https://www.cbsnews.com/news/charlie-kirk-tyler-robinson-preliminary-hearing-roommate-lance-twiggs/">Open CBS</a></div>
+<div class="card"><span class="badge verified">Opened & verified</span><h3>KSL — prosecutor/defense motive dispute</h3><p>Current litigation over whether the state has established the alleged victim-targeting and aggravated elements.</p><a class="open" target="_blank" href="https://www.ksl.com/article/51611672/prosecutors-say-they-have-shown-aggravating-elements-in-tyler-robinson-murder-case">Open KSL</a></div>
+</div>
+</section>
+
+<section id="audit">
+<h2>8. Final Source Audit</h2>
+<table class="audit-table">
+<tr><th>Source</th><th>Status</th><th>Rule</th></tr>
+<tr><td>KSL / CBS court articles</td><td class="ok">LIVE</td><td>Used for court facts.</td></tr>
+<tr><td>SteamHistory archive</td><td class="ok">LIVE ARCHIVE</td><td>Used for exact username history.</td></tr>
+<tr><td>Reddit archive</td><td class="ok">LIVE ARCHIVE</td><td>Used only as historical account evidence.</td></tr>
+<tr><td>Anonbirdd Substack</td><td class="ok">LIVE</td><td>Used as the public source dump; claims labeled anonymous-source allegations.</td></tr>
+<tr><td>Nancy Grace YouTube aVDExETClNg</td><td class="ok">VERIFIED TIMESTAMPS</td><td>2:50, 3:47, 5:17, 7:58 tied to matching 47:59 episode transcript.</td></tr>
+<tr><td>Megyn Kelly YouTube 0fmKLOKVUY4</td><td class="ok">VERIFIED SHORT-CLIP TIMESTAMPS</td><td>Only timestamps within the short Turkey Tom segment are used. No 1-hour timestamps.</td></tr>
+<tr><td>Baron Coleman CGK7-9wukfk</td><td class="ok">PUBLISHER CHAPTERS</td><td>0:57 and 14:32 come from the video's own description.</td></tr>
+<tr><td>Turkey Tom 4aF9J1BoL9Q</td><td class="no">NOT USED AS VIDEO</td><td>Live video, but no exact claim timestamp was independently verified; Substack replaces it.</td></tr>
+<tr><td>Host-supplied TikTok</td><td class="no">MANUAL ONLY</td><td>Automated access blocked. Must be checked manually before air.</td></tr>
+</table>
 </section>
 </main>
-<footer><div class="wrap"><b>TriggerSmart — reverified companion build.</b><br><span class="small">No long-video timestamp is included unless it was tied to the exact upload via transcript or published chapter markers.</span></div></footer>
+<footer><div class="wrap"><b>TriggerSmart — fully re-audited companion build.</b><br><span class="small">No video above contains a timestamp borrowed from a different upload or a different runtime.</span></div></footer>
 </body>
 </html>
